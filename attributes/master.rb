@@ -118,6 +118,7 @@ default['jenkins']['master'].tap do |master|
   #   node.set['jenkins']['master']['user'] = 'root'
   #
   master['user'] = 'jenkins'
+  master['runit_user_and_groups'] = 'jenkins'
 
   #
   # The group under which Jenkins is running. Jenkins doesn't actually use or
